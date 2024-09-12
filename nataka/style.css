@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background: #f4f4f4;
+  }
+  
+  .logo-container {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(15, 2, 2);
+    margin-left: 10px;
+ }
+ .logo-text{
+  margin-left:10px;
+ }
+ .logo-image{
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 10px;
+ }
+  .navbar-right a, .navbar-right, .sign-up .login {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(122, 19, 19);
+    font-size: 1rem;
+    row-gap: 1px;
+  }
+  
+  .navbar-right .sign-up .login{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #bad3f3;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .cta-buttons {
+    margin-top: 20px;
+  }
+
+  .gradient-button{
+    font-size: 10px;
+    background: linear-gradient(to right, #007bff, #00c094);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .gradient-button:hover {
+    background: linear-gradient(to right, #009dff, #00b084);
+  }
+  .cta-buttons .book-now, .cta-buttons .play-video {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(176, 176, 184);
+    color: rgb(1, 4, 12);
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Statistics Section */
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .stat-box {
+    text-align: center;
+    width: 22%;
+  }
+  
+  .stat-box h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Services Section */
+  .services {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service-card {
+    text-align: center;
+    width: 22%;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .service-card h3 {
+    margin-top: 10px;
+  }
+  
+  .service-card .icon {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Doctors Section */
+  .doctors {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .doctor-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .doctor-card {
+    width: 22%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-right {
+      display: none;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .statistics {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-cards, .doctor-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card, .doctor-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
